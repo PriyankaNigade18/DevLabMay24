@@ -1,0 +1,169 @@
+
+
+Assignments
+===================
+1.Class and Object
+ create Employee class with
+ empid and empname and show()
+ print 5 employee records!
+ 
+ 
+ ========================================================
+ Variable is name of storage which can store certain data
+ 
+ 1.Local Variable
+ =====================
+ Any variable declared inside a method/block called local variable
+ 
+ scope: within a method
+ Memory initialized: At the time method execution memory allocates
+ Memory deallocation: After method execution
+ 
+ 2.Instance variable
+ ==========================
+ Any variable declared inside a class and outside any block/method/constructor
+ without static keyword then it is instance
+ 
+ Scope: Within a Object
+Memory initialized: At the time of Object creation memory allocates
+ Memory deallocation: Once Object destroy memory deallocate
+ 
+ Note:
+ ==========
+ For every new object instance variable get the new memory!
+ 
+ 
+ In java static keyword plays very important role
+ Proper memory management we use static
+ 
+ 3.Static variable/class level variable
+ ==========================
+ Any variable declared inside a class and outside any block/method/constructor
+ with static keyword then it is static variable
+ 
+ Scope: Within a class
+Memory initialized: At the time of class loading
+ Memory deallocation: after class unload
+ 
+ Note:
+ ==========
+Static variable creates memory one time and share with all the object
+
+ 
+ =================================================
+ Method
+ =============
+ group of statements we write to perform certain functionality
+ 
+ Types of methods
+======================
+1.Instance method
+======================
+Any method declared without static keyword that is called instance
+
+scope is within object
+Instance method and variable we can call by Object only
+
+2.static method
+=======================
+Any method declared with static keyword is called static method
+scope within a class
+
+Static method we can call in same class without object/class name
+Static method we can call in different class with class name
+
+In Automation to create reusable script we use static method!
+
+==============================================
+	Datatypes
+	===============
+	
+Type Casting
+=================
+Conversion of one type of data into another type
+type should be compatible
+
+
+1.Primitive to Primitive
+==========================
+	1.Implicit type casting
+	------------------------
+	Automatic casting handle by JVM
+	small size ---->large size
+	byte-->short-->int-->long--->float--->double
+	char-->int-->long--->float--->double
+	
+	2.Explicit types casting
+	----------------------------
+	Manual Conversion
+	We use to convert large size data into small size 
+	here we use casting operator (type)
+	
+	double--->float-->long--->int-->char-->short-->byte
+	
+	Wrapper Class
+	=====================
+	To store primitive data as Object
+	
+	int ------>Integer
+	byte------>Byte
+	float----->Float
+	char---->Character
+	boolean----->Boolean
+	long-------->Long
+	short---->Short
+	
+	
+	
+	
+	
+2.Object to Primitive(Wrapper class)
+
+========================
+ Unboxing in java
+ Integer i=90;//object
+ 
+ object into primitive
+ int num=i.intValue();
+ 
+
+
+
+
+
+3.Primitive to Object(Wrapper class)
+========================		
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
