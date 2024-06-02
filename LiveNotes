@@ -137,7 +137,25 @@ type should be compatible
 
 
 
+===================================
+Constructor
+==================
+Used to initialized object
+1.Default constructor(JVM)
+2.Parameterized constructor
 
+constructor called at the time object creation
+Constructor name should be same as its class name
+
+Constructor Overloading is possible but overriding is not possible
+
+
+This Keyword
+===============
+In Java, this is a reference variable that refers to the current object.
+-this can be used to refer current class instance variable.
+-this can be used to invoke current class method (implicitly)
+-this() can be used to invoke current class constructor.
 
 
 
