@@ -164,6 +164,44 @@ In Java, this is a reference variable that refers to the current object.
 
 
 
+===============================
+Array
+=========
+Collection of similar data types which is static in nature
+Array size always fixed!
+
+Array is static data structure
+
+In java Array implemented as Object
+
+=================================
+String is class in java - java.lang
+String is immutable class(by default it is final)
+
+String is collection of  characters
+
+Ways
+=========
+1.using new keyword
+2.using literal
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
