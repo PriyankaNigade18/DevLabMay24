@@ -1,0 +1,111 @@
+
+
+Selenium WebDriver
+=======================
+Selenium WebDriver is an interface
+Selenium WebDriver is an API for webui automation testing
+Functional testing tool/library
+Web Applications
+
+=============================================
+Selenium WebDriver in Java Project
+---------------------------------------
+1.create a java project
+2.download selenium jar-selenium.dev
+3.right click on java project-->build path--->configure build path
+-->library---> add under class path --->external library
+
+
+
+
+Selenium WebDriver in Maven Project
+---------------------------------------
+
+create maven project
+add dependency in pom.xml file
+
+
+Maven is Build management tool/Project management tool
+
+Reposititory
+=================
+1.Local
+--------------
+users-->.m2 folder
+
+2.central/remote
+-------------------
+Apache mvnrepository
+
+
+pom.xml
+============
+POM stands for Project Object Model
+This is configuration file for a project
+
+Pom.xml structure
+==================================
+<project>
+
+<dependencies>
+
+<dependency> Selenium </dependency>
+
+
+</dependencies>
+<build>
+<plugins>
+
+</plugins>
+
+</build>
+
+</project>
+
+========================================
+What is dependency?
+====================================
+Dependency is a library(executable file)
+
+==================================================
+23-06-2024
+==================
+TestCase: Validate Google application title as Google
+-------------------------------------------------------
+step1: Navigate to application
+step2: Get the actual title of Google
+step3: validate actual title with expected title
+Step4: Display message as per validation
+Step5: close the browser
+
+
+Browser Commands
+======================
+1.get(url)
+2.getTitle()
+3.getCurrentUrl()
+4.getPageSource()
+5.close()
+6.quit()
+
+Assignment1:
+--------------------
+Automate browser commands on given application 
+URL: https://automationplayground.com/crm/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
