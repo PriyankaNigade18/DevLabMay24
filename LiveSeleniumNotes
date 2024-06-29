@@ -93,6 +93,250 @@ Assignment1:
 Automate browser commands on given application 
 URL: https://automationplayground.com/crm/
 
+Navigation Commands
+====================
+In selenium Naviagation is an interface
+
+
+1.to(url)
+------------
+driver.navigate().to(url);
+
+2.back()
+------------
+driver.navigate().back();
+
+3.forward()
+---------------
+driver.navigate().forward();
+
+4.refresh()
+-----------------
+driver.navigate().refresh();
+======================================================
+WebElement?
+===================
+Any GUI in application is WebElement
+ex: textbox,link,checkbox,radio button
+
+In Selenium WebElement is an Interface
+
+How To interact with WebElemenmt
+======================================
+1. Identify element 
+2. perform actions
+
+1.Selenium Identify any webelement using Locators
+
+Locator is an address of that webElement form HTML/XML Dom
+document object model
+
+Selenium support total 8 locators
+====================================
+1.By id (primary)
+2.By name
+3.By className
+4.By linkText
+5.By partailLinktext
+6.By tagname
+
+Dynamic locators
+==================
+7.By cssSelector
+8.By Xpath
+
+Methods
+===============================
+1.findElement()
+- Identify single webelement
+- returns single WebElement object
+- When Element not found it return exception NoSuchElementException
+
+
+2.findElements()
+- Identify mutltiple webelements
+- returns List<WebElement>
+- When element not found this method never throws any exception
+size()=0
+list=[]
+
+
+============================
+2.Perform actions on WebElement
+============================
+textbox,searchbox=====>passing data====>sendKeys("",Keys.ENTER)
+link, menu,radio ,checkbox===>click=====>click()
+
+Locators-className
+===========================
+<input value="Login" class="btn btn-primary">
+
+class="btn btn-primary"
+	class1  class2 
+
+
+HyperLink automation
+=======================
+
+<a href="address url">Text</a>
+
+<a id="SignIn">Sign In</a>
+
+1.By linkText
+=====================
+Exact matching /full text
+
+driver.findElement(by.linkText("Sign In")).click();
+
+
+2.By partialLinkText/partialvalue
+====================================
+driver.findElement(by.partialLinkText("In")).click();
+-===========================================================
+Applications
+==================
+https://opensource-demo.orangehrmlive.com/web/index.php/auth/login
+https://automationplayground.com/crm/login.html
+https://tutorialsninja.com/demo/index.php?route=account/login
+
+===============================
+Synchronization in Selenium
+=================================
+Time mapping problem in tool and application is called Synchronization Issue
+==============================================
+Selenium Waits
+==================
+1.Static Wait
+=================
+Thread.sleep(2000)
+
+2.Dynamic Wait
+===================
+1.Implicit Wait
+==================
+It is global wait applicable to all elements from webpage
+after driver initialize apply implicit wait
+
+Syntax
+===========
+driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10))
+
+
+2.Explicit Wait
+====================
+It is applicable for single web element
+Based on certain conditions we can apply explicit wait
+
+Explicit wait can be implemented by two classes
+---------------------
+1.WebDriverWait class
+2.FluentWait class
+
+WebDriverWait(c) extends FluentWait(c) implements Wait(I)
+=====================================================================
+
+tagName locator
+=======================
+
+Number of input boxes
+Number of images
+Number of Links 
+
+What is WebElement in Selenium
+==================================
+WebElement is an interface in selenium
+
+conditional WebElement methods
+=======================
+isDisplayed()
+isEnabled()
+isSelcted()
+
+
+WebElement method
+===================
+1. getAttribute(attribute name)
+----------------------------
+This method returns attribute value
+
+2.getText()
+=================
+To get the visible text of an element we use getText()
+To get inner html text we use getText()
+
+<open> text </close>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

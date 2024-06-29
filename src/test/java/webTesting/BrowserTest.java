@@ -1,5 +1,6 @@
 package webTesting;
 
+import org.openqa.selenium.SearchContext;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
@@ -17,8 +18,11 @@ public class BrowserTest {
 		
 		//create driver session with Edge
 		WebDriver driver=new EdgeDriver();
+	
 		
-		
+		//Parent interface for selenium WebDriver
+		SearchContext driver3=new ChromeDriver();
+
 		
 
 	}
