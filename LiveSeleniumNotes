@@ -128,8 +128,8 @@ How To interact with WebElemenmt
 
 1.Selenium Identify any webelement using Locators
 
-Locator is an address of that webElement form HTML/XML Dom
-document object model
+Locator is an address of that webElement from HTML/XML document
+(Dom document object model)
 
 Selenium support total 8 locators
 ====================================
@@ -148,12 +148,14 @@ Dynamic locators
 Methods
 ===============================
 1.findElement()
+==================
 - Identify single webelement
 - returns single WebElement object
 - When Element not found it return exception NoSuchElementException
 
 
 2.findElements()
+====================
 - Identify mutltiple webelements
 - returns List<WebElement>
 - When element not found this method never throws any exception
@@ -265,6 +267,276 @@ To get the visible text of an element we use getText()
 To get inner html text we use getText()
 
 <open> text </close>
+
+========================================
+30-06-2024
+=============
+
+Dynamic Locators
+===================
+1.cssSelector
+=================
+Css is cascaded style sheet is a language to provide styles to webelemnts
+
+
+cssSelector is locator to locate the webelement from webpage based on css properties
+cssSelector is always faster than xpath as it travels only one direction
+[parent--->child]
+cssSelector syntax is easy
+
+1.tagname with id
+-------------------
+Syntax
+=======
+tagname#id
+
+a#SignIn
+
+2.tagname with attribute
+------------------------
+Syntax:
+============
+tagname[attribute='value']
+
+input[type='email']
+
+3.tagname with classname
+----------------------------
+
+Syntax
+==========
+tagname.className
+button.btn.btn-default.btn-primary
+
+4.tagname with id, className and attribute
+---------------------------------------------
+Syntax
+==========
+tagname#id.className[attribute='value']
+
+input.form-control#password
+=================================
+CssParameter/attribute
+==============================
+*- contains()-partial match
+===========================
+Stntax:
+==========
+tagname[argument *='value']
+a[id *='customer']
+
+$- endsWith()- suffix value
+^- startsWith()- prefix value
+Stntax:
+==========
+tagname[argument ^='value']
+input[id ^='Email']
+
+Maximize browser
+===================
+driver.manage().window().maximize();
+
+=====================================================
+2.Xpath
+=========
+Xpath is path of webelement from html/ xml document
+Xpath directly interact with element through DOM
+Xpath can travel in both direction 
+[parent-->child + child--->Parent]
+Xpath Axies supported
+Xpath have method support
+
+
+============html Dom===============
+<html>-------root node
+
+	<head>
+	</head>
+	<body>
+	
+	<a href="" id="aaa">Link</a>------element
+	</body>
+
+</html>
+
+=============================================
+1. Absolute Xpath(root node)/full xpath
+=============================
+- always starts with root element
+- always starts with /
+
+/html/body/a
+/html/body/section/div/div/div/div/form/div[2]/input
+
+2.Relative Xpath(partial xpath)
+==================================
+- Always identify element from its relative property
+- Always starts with //
+
+//a[@id='aaa']
+
+//*[@id="FirstName"]
+
+==============================
+Syntax:
+================================
+
+//tagname[@attribute='value']
+
+=====================================
+
+Xpath Operators
+===================
+1.and
+===========
+Syntax:
+===========
+//tagname[@attribute='value' and @attribute='value']
+
+2.or
+=============
+Syntax:
+===========
+//tagname[@attribute='value' or @attribute='value']
+------------------------------------------------------------
+Xpath indexing/position()
+==========================
+
+indexing
+================
+(xpath)[index value]
+
+position()
+===================
+(xpath)[porition()=index]
+
+=======================================================
+
+Methods of Xpath
+=======================
+1.text()
+===============
+visible text
+It will never ignore any white space
+
+Syntax:
+==========
+//tagname[text()='text']
+
+
+2.normalize-space()/trim()
+==========================
+Will capture text by ignoring that white space
+
+
+Syntax:
+==========
+//tagname[normalize-space()='text']
+visible text
+
+3.contains()(partial match)
+============================
+Syntax:
+=========
+//tagname[contains(@attribute,'value')]
+
+Or
+
+//tagname[contains(text(),'text')]
+
+
+//input[contains(@id,'searchtext')]
+
+
+4.starts-With(prefix)
+===================
+Syntax:
+=========
+//tagname[startsWith(@attribute,'prefixvalue')]
+
+//input[starts-with(@id,'twotab')]
+
+
+====================================
+Xpath Axies
+=================
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

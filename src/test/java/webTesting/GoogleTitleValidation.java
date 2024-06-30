@@ -13,6 +13,9 @@ public class GoogleTitleValidation {
 		//To open application- get()
 		driver.get("https://www.google.com");
 		
+		//maximize browser
+		driver.manage().window().maximize();
+		
 		//To get the title- getTitle()
 		String actTitle=driver.getTitle();
 		
@@ -28,7 +31,7 @@ public class GoogleTitleValidation {
 		
 		//close the browser close()-close active window   quit()-close all windows open by selenium 
 		//driver.close();
-		driver.quit();
+		//driver.quit();
 
 	}
 
