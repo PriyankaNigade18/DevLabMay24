@@ -458,8 +458,230 @@ Syntax:
 
 
 ====================================
+06-07-2024
+-----------------
 Xpath Axies
 =================
+
+<tbody>----------------------------------ancestor
+       <tr>---------------parent
+ 
+         <td>4</td>----------preceding sibling
+
+          <td>John</td>---------------element
+
+          <td>Robinson</td>----------following sibling
+
+          <td>jr5527</td>----------following sibling
+ 
+         <td>
+              <a href="user.html"><i class="icon-pencil"></i></a>
+              <a role="button" href="#myModal" data-toggle="modal"><i class="icon-remove"></i></a>
+          </td>----------following sibling
+
+        </tr>
+</tbody>
+
+1.ancestor
+--------------------
+Syntax:
+============
+//tagname[@attribute='value']//ancestor::ancestor tagname
+
+scenario:
+=============
+get the John ancestor tagname
+===================================
+
+2.parent
+---------------
+Syntax:
+============
+//tagname[@attribute='value']//parent::parent tagname
+
+3.child
+==========
+Syntax:
+============
+//tagname[@attribute='value']//child::child tagname
+
+4.following
+-------------------
+Syntax:
+============
+//tagname[@attribute='value']//following::following tagname
+
+5.preceding
+------------------
+Syntax:
+============
+//tagname[@attribute='value']//preceding::preceding tagname
+
+6.following sibling
+------------------------
+Syntax:
+============
+//tagname[@attribute='value']//following-sibling::following sibling tagname
+
+7.preceding sibling
+------------------------
+Syntax:
+============
+//tagname[@attribute='value']//preceding-sibling::preceding sibling
+
+8.descendent
+====================
+All child and grand child nodes
+
+//tbody//descendant::tr   ------6 match
+
+===================================================
+
+Dropdown Automation
+=====================
+1.select tag based
+=========================
+Selenium use Select class
+
+To test is dropdown support multiple selection?
+----------------------------
+isMultiple()
+
+Single Selection
+======================
+1.selectByIndex(index)
+2.selectByVisibleText(text)
+3.selectByValue(value)
+
+To get all options from the dropdown
+====================================
+getOptions()
+
+
+
+
+
+2.bootstrap dropdown/ajax /javascript(dynamic)
+====================================
+xpath/cssSelector
+
+
+
+Capabilities
+==================
+https://developer.chrome.com/docs/chromedriver/capabilities
+
+Capabilities are options that you can use to customize and configure a ChromeDriver session.
+
+chrome---->ChromeOptions class
+edge---->EdgeOptions class
+firefox---->FirefoxOptions class
+
+Disable notifications
+-----------------------------
+--disable-notifications
+
+headless testing
+======================
+--headless
+
+selenium 3
+============
+HTMLUnitDriver
+
+
+==========================================================
+
+
+calendar
+-------------
+
+WebTable
+--------------
+
+
+Window Handling
+------------------------
+new tab/new window
+
+selenium 4 
+----------------
+newWindow()
+-------------
+returns WebDriver instance
+
+
+
+
+Alert Handling
+-------------------
+
+Frame Handling
+----------------------
+
+
+Mouse operations
+=================
+Actions class
+
+
+TestNG framework
+==================
+
+Hybrid framework design
+===========================
+
+
+
+Cucumber Framework
+=========================
+
+
+Maven Project Execution
+===========================
+1.pom.xml
+2.CLI
+3.jenkins
+
+
+RestAPI
+============
+
+
+
+
+Appium
+==============
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
