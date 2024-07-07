@@ -558,14 +558,11 @@ To get all options from the dropdown
 getOptions()
 
 
-
-
-
 2.bootstrap dropdown/ajax /javascript(dynamic)
 ====================================
 xpath/cssSelector
 
-
+===========================================================
 
 Capabilities
 ==================
@@ -595,13 +592,24 @@ HTMLUnitDriver
 
 calendar
 -------------
-
-WebTable
---------------
-
+done
 
 Window Handling
 ------------------------
+How to handle multiple Windows in selenium
+=============================================
+1.getWindowHandle()
+------------------------
+return parent window session id
+
+2.getWindowHandles()
+=--------------------------
+Set<String> return parent as well as child windowid
+
+3.switch to window/alert/frame
+---------------------------------
+switchTo().target
+
 new tab/new window
 
 selenium 4 
@@ -609,17 +617,34 @@ selenium 4
 newWindow()
 -------------
 returns WebDriver instance
-
-
-
-
+WebDriver newTab=driver.switchTo().newWindow(WindowType.TAB);
+WebDriver newWindow=driver.switchTo().newWindow(WindowType.WINDOW);
+================================================================
 Alert Handling
 -------------------
+Any window /Javascript alert we can handle using Alert interface
 
+If alert is not handled then you will get exception  UnhandledAlertException
+	    
+	   * How to handle
+	   * ------------------
+	   * Alert interface in selenium
+	   * Ok---accept()
+	   * Cancel---dismiss()
+	   * alert text--->getText()
+	   * prompt alert--->sendKeys()
+	   
 Frame Handling
 ----------------------
+frame with index
+frame with id/name
+frame with webelement
 
+driver.switchTo().frame(id/index/webelement)
 
+//top/parent frame
+defaultContent()
+=====================================================
 Mouse operations
 =================
 Actions class

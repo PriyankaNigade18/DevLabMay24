@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="webElementScenarios.Goibibo_Calendar">
+      <class name="waitScenario.webdriverWaitDemo2">
         <methods>
-          <include name="testCalendar"/>
+          <include name="testExplicitWait"/>
         </methods>
-      </class> <!-- webElementScenarios.Goibibo_Calendar -->
+      </class> <!-- waitScenario.webdriverWaitDemo2 -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

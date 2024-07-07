@@ -10,6 +10,8 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.testng.annotations.Test;
 
+import generic.Utility;
+
 public class RedBusDropdown_Automation {
   @Test
   public void redbusTest() 
@@ -30,19 +32,24 @@ public class RedBusDropdown_Automation {
 	  fromele.click();
 	  fromele.sendKeys("pune");
 	  
-	  List<WebElement> alloptions=driver.findElements(By.xpath("//ul[@class='sc-dnqmqq dZhbJF']//li//text[@class='placeHolderMainText']"));
-	  System.out.println("Total Options are: "+alloptions.size());
 	  
-	  for(WebElement i:alloptions)
-	  {
-		  System.out.println(i.getText());
-		  if(i.getText().contains("Kharadi"))
-		  {
-			  i.click();
-			  break;
-		  }
-			  
-	  }
+	  By list=By.xpath("//ul[@class='sc-dnqmqq dZhbJF']//li//text[@class='placeHolderMainText']");
+	  
+	  Utility.dynamicDropdown(driver,list,"Kharadi");
+	  
+//	  List<WebElement> alloptions=driver.findElements(By.xpath("//ul[@class='sc-dnqmqq dZhbJF']//li//text[@class='placeHolderMainText']"));
+//	  System.out.println("Total Options are: "+alloptions.size());
+//	  
+//	  for(WebElement i:alloptions)
+//	  {
+//		  System.out.println(i.getText());
+//		  if(i.getText().contains("Kharadi"))
+//		  {
+//			  i.click();
+//			  break;
+//		  }
+//			  
+//	  }
 	  
 	  
 	  
