@@ -649,14 +649,61 @@ Mouse operations
 =================
 Actions class
 
+Resize element(HW)
+--------------------
+https://jqueryui.com/resizable/
+
+tooltip automation(HW)
+===========================
+https://jqueryui.com/tooltip/
+
 
 TestNG framework
 ==================
 
-Hybrid framework design
+1.to run test multiple time-invocationCount
+
+2.how disable/exclude test from execution
+----------------------------
+1.using enabled=false
+2.using excluding method(testcase@Test) from xml file
+right click on class-->testng--->convertotestng
+
+always run test from xml
+
+3.How to setup dependecy on test
+------------------------------------
+dependsOnMethod=''
+
+
+Annotations In TestNG
+============================
+preconditions
+-------------------
+@BeforeSuite
+@BeforeTest
+@BeforeClass
+@BeforeMethod
+
+Postcondition
+--------------------
+@AfterSuite
+@AfterTest
+@AfterClass
+@AfterMethod
+
+
 ===========================
+JavaScriptExecutor
+PropertiesFile
+Framework deign
+Data driven test
+Screenshot
+Reports 
+Extent report
+Listners
 
-
+==================================
 
 Cucumber Framework
 =========================
