@@ -8,6 +8,8 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
+import generic.Utility;
+
 public class HrmAppDataPassingUsingXML
 {
 	@Parameters({"un","psw"})
@@ -25,8 +27,15 @@ public class HrmAppDataPassingUsingXML
 		// password
 		driver.findElement(By.xpath("//input[@type='password']")).sendKeys(psw);
 
+		Utility.getScreenshot(driver, "logindata");
 		// button
 		driver.findElement(By.xpath("//button[@type='submit']")).click();
-
+		try {
+			Thread.sleep(1500);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		Utility.getScreenshot(driver, "DashboardPage");
 	}
 }

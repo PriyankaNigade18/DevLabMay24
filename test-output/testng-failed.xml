@@ -3,11 +3,14 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="externalDataForTesting.TestDatafromXMLFile">
+      <class name="pageObjectModelDesign.LoginPageTestCase">
         <methods>
-          <include name="login"/>
+          <include name="setUp"/>
+          <include name="verifyUrl"/>
+          <include name="validateLogin"/>
+          <include name="verifyTitle"/>
         </methods>
-      </class> <!-- externalDataForTesting.TestDatafromXMLFile -->
+      </class> <!-- pageObjectModelDesign.LoginPageTestCase -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -1,29 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-07-13T22:19:16 IST" name="Suite" finished-at="2024-07-13T22:20:03 IST" duration-ms="46868">
+  <suite started-at="2024-07-14T21:24:38 IST" name="Default suite" finished-at="2024-07-14T21:24:42 IST" duration-ms="4256">
     <groups>
     </groups>
-    <test started-at="2024-07-13T22:19:16 IST" name="Test" finished-at="2024-07-13T22:20:03 IST" duration-ms="46868">
-      <class name="externalDataForTesting.HrmAppDataPassingUsingXML">
-        <test-method signature="loginTest(java.lang.String,java.lang.String)[pri:0, instance:externalDataForTesting.HrmAppDataPassingUsingXML@6283d8b8]" started-at="2024-07-13T22:19:16 IST" name="loginTest" finished-at="2024-07-13T22:20:03 IST" duration-ms="46815" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Admin]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[admin123]]>
-              </value>
-            </param>
-          </params>
+    <test started-at="2024-07-14T21:24:38 IST" name="Default test" finished-at="2024-07-14T21:24:42 IST" duration-ms="4256">
+      <class name="pageObjectModelDesign.LoginPageTestCase">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:pageObjectModelDesign.LoginPageTestCase@53ce1329]" started-at="2024-07-14T21:24:38 IST" name="setUp" finished-at="2024-07-14T21:24:41 IST" duration-ms="3272" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- loginTest -->
-      </class> <!-- externalDataForTesting.HrmAppDataPassingUsingXML -->
-    </test> <!-- Test -->
-  </suite> <!-- Suite -->
+        </test-method> <!-- setUp -->
+        <test-method signature="verifyUrl()[pri:1, instance:pageObjectModelDesign.LoginPageTestCase@53ce1329]" started-at="2024-07-14T21:24:41 IST" name="verifyUrl" finished-at="2024-07-14T21:24:41 IST" duration-ms="19" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyUrl -->
+        <test-method signature="verifyTitle()[pri:2, instance:pageObjectModelDesign.LoginPageTestCase@53ce1329]" started-at="2024-07-14T21:24:41 IST" name="verifyTitle" finished-at="2024-07-14T21:24:41 IST" duration-ms="11" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyTitle -->
+        <test-method signature="validateLogin()[pri:3, instance:pageObjectModelDesign.LoginPageTestCase@53ce1329]" started-at="2024-07-14T21:24:41 IST" name="validateLogin" finished-at="2024-07-14T21:24:42 IST" duration-ms="914" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateLogin -->
+      </class> <!-- pageObjectModelDesign.LoginPageTestCase -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>
