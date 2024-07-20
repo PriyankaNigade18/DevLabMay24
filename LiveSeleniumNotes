@@ -711,6 +711,16 @@ Cucumber Framework
 
 Maven Project Execution
 ===========================
+Add Plugins
+==================
+1.surefire plugin
+2.compiler plugin
+
+Goal
+=========
+1.clean: delete reports/document which generate at target folder
+2.test: test the test cases
+
 1.pom.xml
 2.CLI
 3.jenkins
