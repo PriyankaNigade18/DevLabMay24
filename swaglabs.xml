@@ -2,13 +2,17 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Suite">
 
+<listeners>
+
+<listener class-name="listenersTest.ExtentTestNGITestListener"></listener>
+</listeners>
 <test thread-count="5" name="LoginTest">
     <classes>
       <class name="com.SwagLabs.TestCases.LoginPageTest"/>
     </classes>
   </test> <!-- Test -->
   
-  <test thread-count="5" name="Test">
+  <test thread-count="5" name="InventoryTest">
     <classes>
       <class name="com.SwagLabs.TestCases.InventoryPageTest"/>
     </classes>
@@ -20,4 +24,16 @@
     </classes>
   </test> <!-- Test -->
   
+  
+  <test thread-count="5" name="CheckOutTest">
+    <classes>
+      <class name="com.SwagLabs.TestCases.CheckOutPageTest"/>
+    </classes>
+  </test> <!-- Test -->
+  
+  <test thread-count="5" name="OverviewTest">
+    <classes>
+      <class name="com.SwagLabs.TestCases.OverViewPageTest"/>
+    </classes>
+  </test> <!-- Test -->
 </suite> <!-- Suite -->

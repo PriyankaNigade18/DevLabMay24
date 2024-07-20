@@ -17,6 +17,8 @@ public class BaseClass
 	public PropertiesUtil pr;
 	public InventoryPage  ip;
 	public CartPage cp;
+	public CheckOutPage  chp;
+	public OverviewPage op;
 	
 	
 	@BeforeTest
@@ -29,6 +31,8 @@ public class BaseClass
 		lp=new LoginPage(driver);
 		ip=new InventoryPage(driver);
 		cp=new CartPage(driver);
+		chp=new CheckOutPage(driver);
+		op=new OverviewPage(driver);
 		
 	}
 	

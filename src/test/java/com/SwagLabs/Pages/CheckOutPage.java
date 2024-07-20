@@ -1,5 +1,32 @@
 package com.SwagLabs.Pages;
 
-public class CheckOutPage {
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+
+public class CheckOutPage 
+{
+	
+	private WebDriver driver;
+	
+	public CheckOutPage(WebDriver driver)//base class
+	{
+	this.driver=driver;	
+	}
+	
+	//locators
+	private By fname=By.id("first-name");
+	private By lname=By.id("last-name");
+	private By zcode=By.id("postal-code");
+	private By cbtn=By.id("continue");
+	
+	
+	
+	public void doContinue(String fn,String ln,String zc)
+	{
+		driver.findElement(fname).sendKeys(fn);
+		driver.findElement(lname).sendKeys(ln);
+		driver.findElement(zcode).sendKeys(zc);
+		driver.findElement(cbtn).click();
+	}
 
 }
