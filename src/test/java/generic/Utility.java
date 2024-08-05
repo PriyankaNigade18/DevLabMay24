@@ -1,9 +1,14 @@
 package generic;
 
+import java.io.File;
+import java.io.IOException;
 import java.net.MalformedURLException;
 import java.net.URL;
 
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.io.FileHandler;
 import org.openqa.selenium.remote.RemoteWebElement;
 
 import com.google.common.collect.ImmutableMap;
@@ -92,4 +97,72 @@ public class Utility
 				  	  
 				  ));
 	}
+	
+	
+	public static void swipeLeft(WebElement ele)
+	{
+		driver.executeScript("mobile:swipeGesture",ImmutableMap.of(
+				  
+				  "elementId", ((RemoteWebElement)ele).getId(),
+				  "direction","left",
+				  "percent",0.75
+				  ));
+		  
+	}
+	
+	
+	public static void swipeRight(WebElement ele)
+	{
+		driver.executeScript("mobile:swipeGesture",ImmutableMap.of(
+				  
+				  "elementId", ((RemoteWebElement)ele).getId(),
+				  "direction","right",
+				  "percent",0.75
+				  ));
+		  
+	}
+	
+	public static void swipeUp(WebElement ele)
+	{
+		driver.executeScript("mobile:swipeGesture",ImmutableMap.of(
+				  
+				  "elementId", ((RemoteWebElement)ele).getId(),
+				  "direction","up",
+				  "percent",0.75
+				  ));
+		  
+	}
+	
+	public static void swipeDown(WebElement ele)
+	{
+		driver.executeScript("mobile:swipeGesture",ImmutableMap.of(
+				  
+				  "elementId", ((RemoteWebElement)ele).getId(),
+				  "direction","down",
+				  "percent",0.75
+				  ));
+		  
+	}
+	
+	public static void getScreenShot(AppiumDriver driver)
+	{
+		TakesScreenshot ts=(TakesScreenshot)driver;
+		File temp=ts.getScreenshotAs(OutputType.FILE);
+		File dest=new File(System.getProperty("user.dir")+"//ScreenShots//appium"+System.currentTimeMillis()+".png");
+		try {
+			FileHandler.copy(temp,dest);
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+		
+		
+		
+	}
+	
+	
+	
+	
+	
 }

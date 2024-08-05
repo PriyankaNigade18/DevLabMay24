@@ -2,16 +2,16 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-08-04T22:18:00 IST" name="Default suite" finished-at="2024-08-04T22:18:18 IST" duration-ms="18032">
+  <suite started-at="2024-08-05T21:24:38 IST" name="Default suite" finished-at="2024-08-05T21:25:07 IST" duration-ms="28723">
     <groups>
     </groups>
-    <test started-at="2024-08-04T22:18:00 IST" name="Default test" finished-at="2024-08-04T22:18:18 IST" duration-ms="18032">
-      <class name="mobileElementWithGestures.ScrollGesture">
-        <test-method signature="testScroll()[pri:0, instance:mobileElementWithGestures.ScrollGesture@5acf93bb]" started-at="2024-08-04T22:18:00 IST" name="testScroll" finished-at="2024-08-04T22:18:18 IST" duration-ms="17981" status="PASS">
+    <test started-at="2024-08-05T21:24:38 IST" name="Default test" finished-at="2024-08-05T21:25:07 IST" duration-ms="28723">
+      <class name="mobileElementWithGestures.WorkingWithApps">
+        <test-method signature="testApplicationstatus()[pri:0, instance:mobileElementWithGestures.WorkingWithApps@5acf93bb]" started-at="2024-08-05T21:24:38 IST" name="testApplicationstatus" finished-at="2024-08-05T21:25:07 IST" duration-ms="28665" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testScroll -->
-      </class> <!-- mobileElementWithGestures.ScrollGesture -->
+        </test-method> <!-- testApplicationstatus -->
+      </class> <!-- mobileElementWithGestures.WorkingWithApps -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
